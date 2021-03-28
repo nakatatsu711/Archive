@@ -11,6 +11,11 @@
 
 
 
+## operate_googlespreadsheet
+PythonでGoogleスプレッドシートを操作するプログラム
+
+
+
 ## yahooauc_selling_tool
 ヤフオク出品ツール
 
