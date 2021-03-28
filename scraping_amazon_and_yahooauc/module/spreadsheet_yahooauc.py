@@ -10,7 +10,7 @@ class SpreadSheet:
     スプレッドシート読み書き
     '''
 
-    def __init__(self, logger_object, spreadsheet_id, json):
+    def __init__(self, logger_object, spreadsheet_key, json):
         '''
         初期化
         '''
@@ -18,8 +18,8 @@ class SpreadSheet:
         try:
             # ロガー
             self.logger_object = logger_object
-            # スプレッドシートID
-            self.spreadsheet_id = spreadsheet_id
+            # スプレッドシートキー
+            self.spreadsheet_key = spreadsheet_key
             # スプレッドシート初期設定
             scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']  # スコープ
             self.credentials = ServiceAccountCredentials.from_json_keyfile_name(json, scope)  # ダウンロードしたjsonファイル名をクレデンシャル変数に設定
@@ -28,11 +28,11 @@ class SpreadSheet:
             self.row_num_before = 2
             # OAuth2の資格情報を使用してGoogleAPIにログイン（書き込み）
             gc = gspread.authorize(self.credentials)
-            wb = gc.open_by_key(self.spreadsheet_id)
+            wb = gc.open_by_key(self.spreadsheet_key)
             self.ws = wb.worksheet(self.sheet_name_write)
             # OAuth2の資格情報を使用してGoogleAPIにログイン（読み込み）
             gc = gspread.authorize(self.credentials)
-            wb = gc.open_by_key(self.spreadsheet_id)
+            wb = gc.open_by_key(self.spreadsheet_key)
             self.ws = wb.worksheet(self.sheet_name_read)
         except Exception:
             raise
@@ -74,7 +74,7 @@ class SpreadSheet:
         try:
             # OAuth2の資格情報を使用してGoogleAPIにログイン（書き込み）
             gc = gspread.authorize(self.credentials)
-            wb = gc.open_by_key(self.spreadsheet_id)
+            wb = gc.open_by_key(self.spreadsheet_key)
             self.ws = wb.worksheet(self.sheet_name_write)
             # 書き込まれている内容を削除
             col_1s = self.ws.col_values(1)
@@ -98,7 +98,7 @@ class SpreadSheet:
                 row_num_after = self.row_num_before + len(info_list) - 1
                 # OAuth2の資格情報を使用してGoogleAPIにログイン（書き込み）
                 gc = gspread.authorize(self.credentials)
-                wb = gc.open_by_key(self.spreadsheet_id)
+                wb = gc.open_by_key(self.spreadsheet_key)
                 self.ws = wb.worksheet(self.sheet_name_write)
                 # A列からD列まで書き込み
                 cell_list = self.ws.range('A' + str(self.row_num_before) + ':D' + str(row_num_after))

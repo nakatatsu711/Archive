@@ -14,8 +14,8 @@ ENCODING = 'utf-8'
 '''スプレッドシート情報'''
 # jsonファイル名
 JSON = 'JSONファイル名'
-# スプレッドシートID
-SPREADSHEET_ID = 'スプレッドシートキー'
+# スプレッドシートキー
+SPREADSHEET_KEY = 'スプレッドシートキー'
 '''各種URL'''
 AMAZON_URL = 'https://www.amazon.co.jp/gp/css/order-history?ref_=nav_orders_first'
 
@@ -29,7 +29,7 @@ def main():
     try:
         logger = Logger(ENCODING)
         logger.write_today()
-        spreadsheet = spreadsheet_amazon.SpreadSheet(logger, SPREADSHEET_ID, JSON)
+        spreadsheet = spreadsheet_amazon.SpreadSheet(logger, SPREADSHEET_KEY, JSON)
         spreadsheet.read_sheet()
         spreadsheet.delete_sheet()
         chromedriver = chromedriver_amazon.ChromeDriver(logger, AMAZON_URL)
