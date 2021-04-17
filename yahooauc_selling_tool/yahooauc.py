@@ -852,7 +852,7 @@ class ReadCSV:
 
     def make_dir(self):
         '''
-        画像を保存するフォルダを作成
+        画像を保存するディレクトリを作成
         '''
 
         try:
@@ -863,7 +863,7 @@ class ReadCSV:
                 os.mkdir('./yahooauc_images/')
         except Exception:
             print("'''")
-            print('画像フォルダ作成エラー')
+            print('画像ディレクトリ作成エラー')
             text = traceback.format_exc()
             print(text.strip())
             print("'''")
@@ -937,7 +937,7 @@ class ReadCSV:
 
     def del_dir(self):
         '''
-        画像を保存するフォルダを削除
+        画像を保存するディレクトリを削除
         '''
 
         try:
@@ -947,7 +947,7 @@ class ReadCSV:
                 pass
         except Exception:
             print("'''")
-            print('画像フォルダ削除エラー')
+            print('画像ディレクトリ削除エラー')
             text = traceback.format_exc()
             print(text.strip())
             print("'''")

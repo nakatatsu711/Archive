@@ -16,7 +16,7 @@ CSV_NAME = 'sample.csv'
 CATEGORY_CSV_NAME = 'category.csv'
 '''テキストファイル名'''
 TXT_NAME = 'setting.txt'
-'''ダウンロードフォルダ名'''
+'''ダウンロードディレクトリ名'''
 DOWNLOAD_DIR = './yahooauc_images/'
 
 
