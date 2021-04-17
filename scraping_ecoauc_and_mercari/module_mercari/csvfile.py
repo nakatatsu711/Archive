@@ -23,7 +23,7 @@ class CsvFile:
             # CSVパス
             read_csvs = glob.glob(os.getcwd() + '/SET_ECOAUC_CSV/*.csv')
             if len(read_csvs) != 1:
-                raise MyError('SET_ECOAUC_CSVフォルダにCSVファイルをセットしてください')
+                raise MyError('SET_ECOAUC_CSVディレクトリにCSVファイルをセットしてください')
             self.read_path = read_csvs[0]
             self.read_path = self.read_path.replace('/', os.sep)
             self.read_path_logger = self.read_path.replace(os.getcwd(), '').replace('SET_ECOAUC_CSV', '').replace('/', '').replace('\\', '')
