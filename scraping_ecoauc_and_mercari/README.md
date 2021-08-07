@@ -26,7 +26,7 @@ $ pip install tqdm
 以下から自分のGoogleChromeと同じバージョンのドライバーをダウンロードします。  
 https://sites.google.com/a/chromium.org/chromedriver/downloads
 
-ChromeDriverをダウンロードしたら解凍して、`chromedriver_exe`フォルダに配置します。
+ChromeDriverをダウンロードしたら解凍して、`chromedriver_exe`ディレクトリに配置します。
 
 
 ### 設定を行う
@@ -55,3 +55,10 @@ $ python exe_mercari.py
 
 `DOWNLOAD_MERCARI_CSV`にCSVファイルがダウンロードされます。
 このCSVファイルが最終的に欲しい情報をまとめたものです。
+
+
+
+## 結果表示方法
+ダウンロードしたCSVファイルをGoogleスプレッドシートにインポートし、商品写真URLにIMAGE関数を適用すれば画像を表示することもできます。
+
+<img width="300" alt="scraping-ecoauc-and-mercari-1" src="https://user-images.githubusercontent.com/62325937/128611377-219f6c8f-d70d-4342-bef0-211224f2adfd.jpg">
