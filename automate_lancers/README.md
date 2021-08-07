@@ -3,10 +3,8 @@
 
 <br>
 
-ランサーズからYahoo検索用キーワードを収集し、テキストファイル`yahoo2_data.txt`に書き出します。
-
-`yahoo2_data.txt`からYahoo検索用キーワードを読み込み、検索結果であるURLをテキストファイル`yahoo2_result.txt`に書き出します。
-
+ランサーズからYahoo検索用キーワードを収集し、テキストファイル`yahoo2_data.txt`に書き出します。  
+`yahoo2_data.txt`からYahoo検索用キーワードを読み込み、検索結果であるURLをテキストファイル`yahoo2_result.txt`に書き出します。  
 `yahoo2_result.txt`からURLを読み込み、ランサーズに書き出します。
 
 
@@ -43,7 +41,7 @@ ChromeDriverをダウンロードしたら解凍して、任意の場所に配�
 
 
 ### 実行
-コマンドラインで実行します。
+コマンドラインで実行します。  
 キーワードには仕事検索キーワードを入力します。
 ```
 $ python automate_lancers.py キーワード
