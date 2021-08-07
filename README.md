@@ -22,9 +22,9 @@ PythonでGoogleスプレッドシートを操作するプログラム
 
 
 ## scraping_amazon_and_yahooauc
-Amazon、ヤフオクからスクレイピングを行い、Googleスプレッドシートに書き込むプログラム
+Amazon、ヤフオクからスクレイピングしてスプレッドシートに出力するプログラム
 
 
 
 ## scraping_ecoauc_and_mercari
-EcoRing the Auction、メルカリからスクレイピングをするプログラム
+EcoRing the Auction、メルカリからスクレイピングするプログラム
