@@ -1,12 +1,13 @@
 ## 概要
-法律事務所の情報をスクレイピングするプログラムです。
+ランサーズの検索案件を自動化するプログラムです。
 
 <br>
 
-[法律事務所・検索＆口コミサイト](http://www.legal-findoffice.com/cat/all/tokyo/)（現在閉鎖しているようなのでクリックしないほうがいいです）から東京都にある法律事務所の情報を取得します。  
-各法律事務所の詳細情報が記載されたページのURLを取得します。  
-詳細情報ページに遷移し、「事務所名」、「住所」、「電話番号」、「FAX番号」、「ホームページURL」の情報を取得します。  
-取得した詳細情報はテキストファイルに書き出します。
+ランサーズからYahoo検索用キーワードを収集し、テキストファイル`yahoo2_data.txt`に書き出します。
+
+`yahoo2_data.txt`からYahoo検索用キーワードを読み込み、検索結果であるURLをテキストファイル`yahoo2_result.txt`に書き出します。
+
+`yahoo2_result.txt`からURLを読み込み、ランサーズに書き出します。
 
 
 
@@ -20,14 +21,30 @@ Python：3系
 ## 実行方法
 ### ライブラリインストール
 ```
-$ pip install requests
-$ pip install beautifulsoup4
-$ pip install lxml
+$ pip install selenium
 ```
+
+
+### ChromeDriverについて
+ブラウザはGoogleChromeを使用します。  
+ブラウザを自動操作するためにはChromeDriverが必要です。
+
+以下から自分のGoogleChromeと同じバージョンのドライバーをダウンロードします。  
+https://sites.google.com/a/chromium.org/chromedriver/downloads
+
+ChromeDriverをダウンロードしたら解凍して、任意の場所に配置します。  
+そして、`chromedriver_path`のところに自分がダウンロードした場所を指定します。  
+`input_data_on_lancers.py`、`scraping_yahoo2.py`、`output_data_on_lancers.py`のそれぞれで指定してください。
+
+
+### ランサーズのログイン情報を指定
+`mail_address`、`password`にランサーズのログイン情報を指定します。  
+`input_data_on_lancers.py`、`output_data_on_lancers.py`のそれぞれで指定してください。
 
 
 ### 実行
 コマンドラインで実行します。
+キーワードには仕事検索キーワードを入力します。
 ```
-$ python scraping_law_in_tokyo.py
+$ python automate_lancers.py キーワード
 ```
