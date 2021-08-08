@@ -8,8 +8,8 @@ Amazonは「注文履歴」、ヤフオクは「出品終了」から情報を�
 
 ## システム環境
 以下で動作確認済みです。  
-OS：macOS、Windows  
-Python：3系
+`OS`：macOS、Windows  
+`Python`：3系
 
 
 

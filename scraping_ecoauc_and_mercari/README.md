@@ -6,8 +6,8 @@ EcoRing the Auctionから取得した商品名をメルカリで検索し、さ�
 
 ## システム環境
 以下で動作確認済みです。  
-OS：macOS、Windows  
-Python：3系
+`OS`：macOS、Windows  
+`Python`：3系
 
 
 

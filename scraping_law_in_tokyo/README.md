@@ -8,8 +8,8 @@
 
 ## システム環境
 以下で動作確認済みです。  
-OS：macOS  
-Python：3系
+`OS`：macOS  
+`Python`：3系
 
 
 
