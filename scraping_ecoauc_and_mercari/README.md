@@ -24,7 +24,7 @@ $ pip install tqdm
 ブラウザを自動操作するためにはChromeDriverが必要です。
 
 以下から自分のGoogleChromeと同じバージョンのドライバーをダウンロードします。  
-https://sites.google.com/a/chromium.org/chromedriver/downloads
+[https://sites.google.com/a/chromium.org/chromedriver/downloads](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 
 ChromeDriverをダウンロードしたら解凍して、`chromedriver_exe`ディレクトリに配置します。
 
