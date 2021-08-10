@@ -24,7 +24,7 @@ $ pip install selenium
 ブラウザを自動操作するためにはChromeDriverが必要です。
 
 以下から自分のGoogleChromeと同じバージョンのドライバーをダウンロードします。  
-https://sites.google.com/a/chromium.org/chromedriver/downloads
+[https://sites.google.com/a/chromium.org/chromedriver/downloads](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 
 ChromeDriverをダウンロードしたら解凍して、任意の場所に配置します。  
 そして、`chromedriver_path`のところに自分がダウンロードした場所を指定します。  
