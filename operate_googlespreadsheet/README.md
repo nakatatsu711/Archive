@@ -27,7 +27,7 @@ $ pip install oauth2client
 ブラウザを自動操作するためにはChromeDriverが必要です。
 
 以下から自分のGoogleChromeと同じバージョンのドライバーをダウンロードします。  
-https://sites.google.com/a/chromium.org/chromedriver/downloads
+[https://sites.google.com/a/chromium.org/chromedriver/downloads](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 
 ChromeDriverをダウンロードしたら解凍して、任意の場所に配置します。  
 そして、`chromedriver_path`のところに自分がダウンロードした場所を指定します。  
@@ -38,7 +38,7 @@ Pythonでスプレッドシートを操作するには初期設定が必要で�
 
 #### プロジェクトを新規作成する
 以下にアクセスして、「プロジェクトの選択」、「新しいプロジェクト」と進みます。  
-https://console.cloud.google.com
+[https://console.cloud.google.com](https://console.cloud.google.com)
 
 「プロジェクト名」を入力し、「作成」をクリックします。
 
